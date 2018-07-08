@@ -1,4 +1,4 @@
-# FaceRecognition
+# Face Recognition
  Face Recognition Is a Tool That I made to find Faces in Videos and anything and predict who is in the Picture. Like in movie but real 
 ## Screenshot 
 ![shot](https://c.top4top.net/p_9196os6m1.png)
@@ -23,5 +23,5 @@ after that whene you finish with picture.
 run the trainner.py file that  will creat 2 files trainner.yml and labels.pkl .
 don't delete theme because the are the data of the neural network in the tools
 
-#Can I use an other Model
+## Can I use an other Model
 Yeah Sure, Like Tensorflow, Pytorch, Keras with it 
