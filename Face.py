@@ -1,11 +1,14 @@
 # coding: utf-8
 
 import numpy as np
-import cv2, pickle
+import cv2, pickle, random
 
 
 #Creat a face Recognizer
 recognizer = cv2.face.LBPHFaceRecognizer_create()
+
+#List of Videos
+videos = ["Crush","OverMyHead.mp4"]
 
 #Load the haarcascade frontalface Classifier
 face = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
@@ -22,8 +25,11 @@ with open("labels.pkl","rb") as f:
     labelsH = pickle.load(f)
     labels = {v:k for k,v in labelsH.items()}
 
+#Random Choice for the video
+video = random.choice(videos)
+
 ############ Warning  #####################
-cap = cv2.VideoCapture("OverMyHead.mp4")
+cap = cv2.VideoCapture(str(video))
 #for this line if you want use the input of the video is camera live steam 
 #put this code :
 #cap = cv2.VideoCapture(0)
