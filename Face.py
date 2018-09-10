@@ -8,7 +8,7 @@ import cv2, pickle, random
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 
 #List of Videos
-videos = ["Crush","OverMyHead.mp4"]
+videos = ["Crush.mp4","OverMyHead.mp4"]
 
 #Load the haarcascade frontalface Classifier
 face = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
